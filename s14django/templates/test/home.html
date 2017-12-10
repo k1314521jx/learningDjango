@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body style="margin: 0">
+    <div style="height: 48px;background-color: #dddddd"></div>
+    <div>
+        <form action="/home" method="post">
+            <input type="text" name="username" placeholder="电影名称" />
+            <input type="submit" value="查询" />
+        </form>
+    </div>
+    <div>
+        <table>
+            {% for row in user_list %}
+                <tr>
+                    <td>{{row}}</td>
+                </tr>
+            {% endfor %}
+
+        </table>
+    </div>
+    <!-- $('.del').click(function(){ -->
+        <!-- var row_id = $(this).attr('row-id'); -->
+        <!-- $('#nid').val(row_id); -->
+    <!-- }) -->
+    <div>
+    </div>
+
+</body>
+</html>
